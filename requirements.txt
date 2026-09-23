@@ -1,0 +1,7 @@
+torch==2.3.0+cu121
+torchvision
+bark-tts
+ffmpeg-python
+accelerate
+real-esrgan
+runpodctl
