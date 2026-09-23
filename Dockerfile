@@ -9,7 +9,8 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 COPY requirements.txt /app/requirements.txt
 RUN pip install --upgrade pip && \
-    pip install -r /app/requirements.txt
+    pip install --extra-index-url https://download.pytorch.org/whl/cu121 \
+    -r /app/requirements.txt
 
 COPY . /app
 WORKDIR /app
